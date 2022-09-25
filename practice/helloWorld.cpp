@@ -103,9 +103,10 @@ bool IsPrime::is_prime(int number){
         }
         divisor++;
     }
-    std::cout<<"\n";
-    std::cout<<number<<" is a Prime Number.";
-    std::cout<<"\n";
+    //// Debugging code, comment out when not needed.
+    // std::cout<<"\n";
+    // std::cout<<number<<" is a Prime Number.";
+    // std::cout<<"\n";
     return true;
 }
 
