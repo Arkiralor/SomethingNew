@@ -1,6 +1,7 @@
 #include<iostream>
 #include<string>
 #include<ctime>
+#include<cstdio>
 
 
 class TimeUtil{
@@ -143,7 +144,7 @@ int IsPrime::find_primes_till(int number){
             continue;
         }
     }
-    time_obj.timestamp("Found all prime numbers.");
+    time_obj.timestamp("Found all prime numbers...");
 
     std::cout<<"\nThe list of prime numbers until "<<number<<" is:\n";
     this->clean_display_array(primes, result_current_index-1);
