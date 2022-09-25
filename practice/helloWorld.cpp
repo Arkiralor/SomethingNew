@@ -173,6 +173,9 @@ void IsPrime::clean_display_array(int array[], int size){
 }
 
 void TimeUtil::timestamp(std::string arg){
+    /*
+    Class Method to print a human-readable timestamp.
+    */
     // current date/time based on current system
     time_t now = time(0);
    
