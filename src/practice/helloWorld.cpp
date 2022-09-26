@@ -43,7 +43,7 @@ void HelloWorld::enter_message(void)
     getline(std::cin, this->message);
     if (this->message.empty())
     {
-        this->message = "Hello to the world";
+        this->message = "Welcome to the world";
     }
 }
 
