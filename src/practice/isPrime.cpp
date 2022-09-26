@@ -40,7 +40,7 @@ void is_prime_func()
     Function to call the 'IsPrime' class methods.
     */
     IsPrime obj(7289);
-    obj.find_primes_till(10000);
+    obj.find_primes_till(100000);
 }
 
 int main()
