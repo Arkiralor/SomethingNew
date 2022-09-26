@@ -1,0 +1,1 @@
+g++ ../practice/isPrime.cpp -o ../../executables/isPrime.exe && ./../../executables/isPrime.exe
