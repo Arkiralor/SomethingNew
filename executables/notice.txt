@@ -1,0 +1,2 @@
+This file only exists so that this folder is tracked; the shellscripts in `scripts` might break otherwise and I am too sleep-deprived right now to 
+create a setup function to auto-create the folder via C++.

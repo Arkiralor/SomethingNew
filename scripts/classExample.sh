@@ -1,0 +1,1 @@
+g++ ../practice/classExample.cpp -o ../executables/classExample.exe && ./../executables/classExample.exe
