@@ -15,31 +15,38 @@ private:
     const char *DEFAULT_MESSAGE = "Welcome to the world";
 
 public:
-    HelloWorld(){
+    HelloWorld()
+    {
         this->name = this->DEFAULT_NAME;
 
         this->message = this->DEFAULT_MESSAGE;
     }
-    HelloWorld(std::string name, std::string message){
-        if (name!=""){
+    HelloWorld(std::string name, std::string message)
+    {
+        if (name != "")
+        {
             this->name = name;
         }
-        else{
-            this->name=this->DEFAULT_NAME;
+        else
+        {
+            this->name = this->DEFAULT_NAME;
         }
-        if (message!=""){
+        if (message != "")
+        {
             this->message = message;
         }
-        else{
+        else
+        {
             this->message = this->DEFAULT_MESSAGE;
         }
     }
     void enter_message(void);
     void enter_name(void);
     void display_message(void);
-    void __str__(){
-        std::cout<<"\nNAME:\t"<<this->name;
-        std::cout<<"\nMESSAGE:\t"<<this->message;
+    void __str__()
+    {
+        std::cout << "\nNAME:\t" << this->name;
+        std::cout << "\nMESSAGE:\t" << this->message;
     }
 };
 
@@ -48,7 +55,7 @@ void hello_world_func()
     /*
     Function to call the 'HelloWorld' class methods.
     */
-    
+
     std::string message, name;
     std::cout << "Enter your name:\t";
     getline(std::cin, name);
@@ -89,5 +96,5 @@ void HelloWorld::enter_name(void)
 
 void HelloWorld::display_message(void)
 {
-    std::cout <<"Complete Message:\t" <<this->message << ", " << this->name << ".\n";
+    std::cout << "Complete Message:\t" << this->message << ", " << this->name << ".\n";
 }
