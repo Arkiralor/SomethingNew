@@ -17,8 +17,12 @@ class IsPrime
     */
 private:
     int number;
+    const int DEFAULT_VALUE = 10000;
 
 public:
+    IsPrime(){
+        this->number=this->DEFAULT_VALUE;
+    }
     IsPrime(int number)
     {
         /*
@@ -27,6 +31,9 @@ public:
         if (number != 0)
         {
             this->number = number;
+        }
+        else{
+            this->number=this->DEFAULT_VALUE;
         }
     }
     bool is_prime(int number);
@@ -39,8 +46,12 @@ void is_prime_func()
     /*
     Function to call the 'IsPrime' class methods.
     */
-    IsPrime obj(7289);
-    obj.find_primes_till(100000);
+    int arg;
+    std::cout<<"\nEnter the argument for the prime function:\t";
+    std::cin>>arg;
+    std::cout<<"\n";
+    IsPrime obj(arg);
+    obj.find_primes_till(0);
 }
 
 int main()
@@ -85,10 +96,13 @@ int IsPrime::find_primes_till(int number)
     /*
     Class Method to find all prime numbers less than or equal to the given number.
     */
-    if (number <= 4)
+    if (number <= 4 && number>0)
     {
-        std::cout << "\nThe entered values (" << number << ") is too low.\n";
+        std::cout << "\nThe entered value (" << number << ") is too low.\n";
         return 0;
+    }
+    else if (number>=0){
+        number = this->number;
     }
     int size = ((number / 2) + 1);
     int primes[size];
@@ -121,7 +135,7 @@ int IsPrime::find_primes_till(int number)
     time_obj.timestamp("Found all prime numbers...");
 
     std::cout << "\nThe list of prime numbers until " << number << " is:\n";
-    // this->clean_display_array(primes, result_current_index - 1);
+    this->clean_display_array(primes, result_current_index - 1);
     std::cout << "\n";
 
     return 1;
