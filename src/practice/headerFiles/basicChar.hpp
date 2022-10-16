@@ -11,6 +11,6 @@ class BasicChar{
         const string at = "@";
         const string dot = ".";
         const string space = " ";
-        const string enter = "↲";
+        const string enter = "↵";
 
 };
