@@ -13,7 +13,7 @@ public:
 class IsPrime
 {
     /*
-    Class to hold all functionality regarding prime numbers.
+        Class to hold all functionality regarding prime numbers.
     */
 private:
     int number;
@@ -26,7 +26,7 @@ public:
     IsPrime(int number)
     {
         /*
-        Constructor method for this class.
+            Constructor method for this class.
         */
         if (number != 0)
         {
@@ -44,7 +44,7 @@ public:
 void is_prime_func()
 {
     /*
-    Function to call the 'IsPrime' class methods.
+        Function to call the 'IsPrime' class methods.
     */
     int arg;
     std::cout<<"\nEnter the argument for the prime function:\t";
@@ -57,7 +57,7 @@ void is_prime_func()
 int main()
 {
     /*
-    Entry point to runtime.
+        Entry point to runtime.
     */
     is_prime_func();
     return 0;
@@ -66,7 +66,7 @@ int main()
 bool IsPrime::is_prime(int number)
 {
     /*
-    Class Method to check if a given natural number is a prime number.
+        Class Method to check if a given natural number is a prime number.
     */
     int divisor = 2;
     int upper_limit = number / 2;
@@ -94,7 +94,7 @@ bool IsPrime::is_prime(int number)
 int IsPrime::find_primes_till(int number)
 {
     /*
-    Class Method to find all prime numbers less than or equal to the given number.
+        Class Method to find all prime numbers less than or equal to the given number.
     */
     if (number <= 4 && number>0)
     {
@@ -144,7 +144,7 @@ int IsPrime::find_primes_till(int number)
 void IsPrime::clean_display_array(int array[], int size)
 {
     /*
-    Class Method to clear empty elements from the array and display the cleaned results to the console screen.
+        Class Method to clear empty elements from the array and display the cleaned results to the console screen.
     */
     int display_array[size], index;
     TimeUtil time_obj;
@@ -167,7 +167,7 @@ void IsPrime::clean_display_array(int array[], int size)
 void TimeUtil::timestamp(std::string arg)
 {
     /*
-    Class Method to print a human-readable timestamp.
+        Class Method to print a human-readable timestamp.
     */
     // current date/time based on current system
     time_t now = time(0);

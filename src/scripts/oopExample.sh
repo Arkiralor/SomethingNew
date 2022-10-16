@@ -1,0 +1,1 @@
+g++ ../practice/oopExample.cpp -o ../../executables/oopExample.exe && ./../../executables/oopExample.exe
